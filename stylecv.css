@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+
+}
+body{
+    background-color: rgb(228, 217, 203);
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family:'Times New Roman';
+}
+
+.lien a img{
+    width: 5%;
+    margin: 0 auto ;
+   
+   
+}
+.lien{
+    float: right;
+    
+}
+
+.jeanfidele{
+    width: 100%;
+    color: black;
+    
+
+}
+.coordonnee {
+    color: rgb(93, 119, 134);
+    font-size: 15px;
+}
+    
+.referent{
+    color: rgb(93, 119, 134);
+    width: 70%;
+    text-align: right;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(56, 88, 87);
+    width: 100%;
+    border-top: 5px solid beige;
+    
+}
+img.displayed{
+    border-radius: 50%;
+    width: 180px;
+    margin-right: 300px ;
+    box-shadow:0 0  10px black;
+}
+.profil{
+    margin-left: 100px;
+    font-size:18px ;
+    text-align: justify;
+    
+}
+.parent{
+    display: flex;
+    font-size: 15px;
+    
+    
+}
+ul li {
+    list-style-type: none;
+}
+.Formation{
+    border-left-width: 5px;
+    border-left-style: dotted;
+    border-left-color: black ;
+    padding-left: 30px;
+    width: 50%;
+    margin-right: 180px;
+}
+.competence{
+    padding-left: 2px ;
+    width: 50%;
+}
+
+@media screen and (max-width: 900px){
+
+    .container{
+        display: block;
+    }
+    .container .profil{
+        display: inline-block;
+        width: 100%;
+        margin: 10px;
+    }
+    .container .profil p, .container  .profil h3{
+        text-align: justify;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .container .image-profil{
+       display: block;
+       margin-left: 30%;
+    }
+    .lien{
+        text-align: center;
+    }
+    .jeanfidele h1{
+        text-align: center;
+    }
+    .jeanfidele h2{
+        text-align: center;
+        color:blue;
+        width: 100%;
+    }
+    .coordonnee p{
+        text-align: center;
+    }
+    .parent{
+        display: block;
+    }
+    .parent .Formation{
+        border: none;
+        text-align: center;
+        width: 100%;
+        border-top: 1px solid blue;
+    }
+    .parent .competence{
+        text-align: center;
+        width: 100%;
+        padding: 0;
+    }
+}
